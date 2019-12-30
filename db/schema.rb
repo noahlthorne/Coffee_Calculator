@@ -10,9 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_12_30_082029) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "brewers", force: :cascade do |t|
+    t.string "category"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "coffees", force: :cascade do |t|
+    t.string "roast"
+    t.string "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "recipes", force: :cascade do |t|
+    t.bigint "brewer_id"
+    t.bigint "coffee_id"
+    t.string "brew_time"
+    t.string "water_temp"
+    t.text "steps"
+    t.string "grind_size"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["brewer_id"], name: "index_recipes_on_brewer_id"
+    t.index ["coffee_id"], name: "index_recipes_on_coffee_id"
+  end
+
+  add_foreign_key "recipes", "brewers"
+  add_foreign_key "recipes", "coffees"
 end
