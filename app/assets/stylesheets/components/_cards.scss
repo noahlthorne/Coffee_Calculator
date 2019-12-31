@@ -1,0 +1,15 @@
+#cards-container {
+  justify-content: between;
+}
+
+.brewer-card {
+  height: 200px;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  background-image: url("https://images.pexels.com/photos/6659/coffee-cup-mug-cafe.jpg?cs=srgb&dl=chemex-coffee-cup-6659.jpg&fm=jpg");
+  background-size: cover;
+  margin: 8px;
+  border-radius: 2px;
+  text-align: center;
+  color: white;
+}
