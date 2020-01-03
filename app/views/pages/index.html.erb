@@ -1,10 +1,12 @@
 <div class="container">
-  <div class="d-flex" id="cards-container">
+  <div class="d-flex brewer-cards-container">
     <% @brewers.each do |brewer| %>
       <%= render "brewers/brew_method_card", brewer: brewer%>
     <% end %>
+  </div>
+  <div class="d-flex coffee-cards-container">
     <% @coffees.each do |coffee| %>
       <%= render "coffees/coffee_card", coffee: coffee%>
     <% end %>
-    </div>
+  </div>
 </div>
