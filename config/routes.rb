@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'brewers#index'
+  root to: 'pages#index'
   resources :brewers, only: [:index]
+  resources :coffees, only: [:index]
+  resources :recipes, only: [:index]
 end
