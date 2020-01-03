@@ -9,4 +9,9 @@
       <%= render "coffees/coffee_card", coffee: coffee%>
     <% end %>
   </div>
+  <div class="d-flex recipe-cards-container">
+    <% @recipes.each do |recipe| %>
+      <%= render "recipes/recipe_card", coffee: coffee%>
+    <% end %>
+  </div>
 </div>
