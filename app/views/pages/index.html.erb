@@ -5,7 +5,7 @@
     <% end %>
   </div>
   <div class="d-flex coffee-cards-container">
-    <% @coffees.each do |coffee| %>
+    <% @coffees.first(10).each do |coffee| %>
       <%= render "coffees/coffee_card", coffee: coffee%>
     <% end %>
   </div>
