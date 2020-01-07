@@ -2,6 +2,14 @@
   justify-content: between;
 }
 
+.coffee-button {
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+}
+
 .coffee-cards-container {
   flex-wrap: wrap;
   justify-content: center;
