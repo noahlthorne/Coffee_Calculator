@@ -31,6 +31,11 @@
   text-align: center;
   vertical-align: center;
   color: white;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
 }
 
 .coffee-card {
