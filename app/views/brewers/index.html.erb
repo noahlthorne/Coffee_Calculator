@@ -1,7 +1,7 @@
 <div class="container">
   <div class="d-flex" id="cards-container">
     <% @brewers.each do |brewer| %>
-      <%= render "brewers/brew_method_card", brewer: brewer%>
+      <%= render "brewers/brew_method_card", brewer: brewer %>
     <% end %>
     <% @coffees.each do |coffee| %>
       <%= link_to <%= render "brewers/coffee_card", coffee: coffee%>, recipe_path(@recipe) %>

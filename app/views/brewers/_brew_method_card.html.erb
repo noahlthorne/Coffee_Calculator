@@ -1,3 +1,5 @@
 <div class="brewer-card">
-  <h3><%= brewer.category %></h3>
+  <%= link_to brewer_path(brewer) do %>
+    <h3><%= brewer.category %></h3>
+  <% end  %>
 </div>
