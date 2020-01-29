@@ -3,8 +3,5 @@
     <% @brewers.each do |brewer| %>
       <%= render "brewers/brew_method_card", brewer: brewer %>
     <% end %>
-    <% @coffees.each do |coffee| %>
-      <%= link_to <%= render "brewers/coffee_card", coffee: coffee%>, recipe_path(@recipe) %>
-    <% end %>
     </div>
 </div>
