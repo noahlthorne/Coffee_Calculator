@@ -1,11 +1,14 @@
 #cards-container {
+  flex-wrap: wrap;
   justify-content: center;
+  padding: auto;
+  margin-top: 16px;
 }
 
 .coffee-button {
   transition: all 0.3s;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     text-decoration: none;
   }
 }
@@ -14,15 +17,19 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: auto;
+  margin-top: 16px;
 }
 
 .brewer-cards-container {
+  flex-wrap: wrap;
   justify-content: center;
+  padding: auto;
+  margin-top: 16px;
 }
 
 .brewer-card {
   height: 200px;
-  width: 200px;
+  width: 250px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   background-image: url("https://images.pexels.com/photos/6659/coffee-cup-mug-cafe.jpg?cs=srgb&dl=chemex-coffee-cup-6659.jpg&fm=jpg");
   background-size: cover;
@@ -33,7 +40,7 @@
   color: white;
   transition: all 0.3s;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     text-decoration: none;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   }
@@ -46,7 +53,7 @@
 
 .coffee-card {
   height: 200px;
-  width: 200px;
+  width: 250px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   background-image: url("https://images.pexels.com/photos/34085/pexels-photo.jpg?cs=srgb&dl=beans-coffee-drink-cafe-34085.jpg&fm=jpg");
   background-size: cover;
@@ -57,6 +64,10 @@
   color: white;
   &:active {
   border: 2px solid black;
+  }
+  &:hover {
+    text-decoration: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   }
 }
 
